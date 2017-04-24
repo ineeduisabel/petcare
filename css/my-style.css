@@ -1,0 +1,47 @@
+.eukanuba-enter {
+	background: url("/eukanuba/img/background.jpg") ;
+}
+
+.eukanuba-color{
+	background: rgba(228,0,125,0.3);
+	position:absolute;
+	width:50vw;
+	height:100vh;
+	left:0;
+	top:0;
+	z-index: 0;
+}
+
+.enter-box .content{
+	position:absolute;
+	z-index:10;
+}
+
+.iams-enter {
+	background: url("/iams/img/background2.jpg")
+}
+
+.enter-box {
+	display: inline-block;
+	float: left;
+	width: 50vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.bot_angle {
+	border-width: 20vh 0 0 0;
+	border-style: solid dashed solid solid;
+	border-right-width: 100vw;
+	position: relative;
+}
+
+.bg-black-l {
+	border-color: transparent #0c1a1e transparent transparent;
+}
+
+.bg-white-l {
+	border-color: transparent #fff transparent transparent;
+}
