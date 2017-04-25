@@ -40,7 +40,7 @@
 
 		<link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" media="all" />
 		<link rel="stylesheet" href="/css/icon-fonts.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="/css/my-style.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="/css/my-style.css?2" type="text/css" media="all" />
 
 		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -57,28 +57,45 @@
 				<div class="rect5"></div>
 			</div>
 		</div>
-
 		<div id="main_wrapper">
 			<div class="woodbar"></div>
 			<div class="enter-box eukanuba-enter">
-				<div class="eukanuba-color"></div>
-				<div class="content">
+				<div class="eukanuba-color color_cover">
+					<div class="cover-content">
+						<div class="logo"><img src="/eukanuba/img/logo_dark.png?3">
+							<br>
+							<h4>狗狗生命週期的營養哲學</h4>
+							<img class="pet-icon" src="/images/dog_icon_white.png">
+							<br>
+
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
 					<div class="logo"><img src="/eukanuba/img/logo.png?1">
 					</div>
 				</div>
 			</div>
 			<div class="enter-box iams-enter">
-				<div class="iams-color"></div>
-				<div class="content">
+				<div class="iams-color color_cover">
+					<div class="cover-content">
+						<div class="logo"><img src="/iams/img/logo_dark.png">
+							<br>
+							<h4>貓貓三重點：均衡、均衡、均衡</h4>
+							<img class="pet-icon" src="/images/cat_icon_white2.png">
+							<br>
+
+						</div>
+					</div>
+				</div>
+				<div class="main-content">
 					<div class="logo"><img src="/iams/img/logo.png">
 					</div>
 				</div>
 			</div>
-
 			<a href="#0" class="hm_go_top"></a>
 		</div>
 		<!-- End wrapper -->
-
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>
 			window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')
@@ -87,7 +104,42 @@
 		<script src="/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
 		<script src="/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
 		<script src="/js/isotope.pkgd.min.js"></script>
+		<script src="/js/jquery.color-2.1.2.js"></script>
 		<!-- this is where we put our custom functions -->
 		<script type="text/javascript" src="/js/functions.js"></script>
+		<script>
+			$(".eukanuba-enter").click(function() {
+				$(".iams-enter").find(".color_cover").stop().fadeIn();
+				$(".eukanuba-color").css("z-index",15).animate({
+					width : "100vw",
+					height : "100vh"
+				}, 1000, function() {
+					$(".eukanuba-color").animate({
+						backgroundColor:"#fff"
+					}, 1000);
+				});
+			});
+			// $(".iams-enter").click(function() {
+				// $(".eukanuba-enter").find(".color_cover").stop().fadeIn();
+				// $(".iams-color").css("z-index",15).animate({
+					// width : "100vw",
+					// height : "100vh"
+				// }, 1000, function() {
+					// $(".iams-color").animate({
+						// backgroundColor:"#fff"
+					// }, 1000);
+				// });
+			// });
+		</script>
+		<script>
+			// $(".eukanuba-enter").hover(function() {
+				// $(this).find(".color_cover").stop().fadeOut();
+				// $(".iams-enter").find(".color_cover").stop().fadeIn();
+			// });
+			// $(".iams-enter").hover(function() {
+				// $(this).find(".color_cover").stop().fadeOut();
+				// $(".eukanuba-enter").find(".color_cover").stop().fadeIn();
+			// });
+		</script>
 	</body>
 </html>

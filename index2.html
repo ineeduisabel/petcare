@@ -1,0 +1,121 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<!-- the "no-js" class is for Modernizr. -->
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
+		<title>PetCare</title>
+		<meta name="author" content="" />
+		<meta name="description" content="" />
+
+		<!-- Don't forget to set your site up: http://google.com/webmasters -->
+		<meta name="google-site-verification" content="" />
+		<meta name="Copyright" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+		<link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png" />
+
+		<!-- concatenate and minify for production -->
+		<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="/css/settings.css" media="screen" />
+		<link rel="stylesheet" href="/css/bootstrap.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="/css/animate.min.css" type="text/css" media="all" />
+
+		<link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="/css/icon-fonts.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="/css/my-style.css?3" type="text/css" media="all" />
+
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+	</head>
+
+	<!-- Class ( site_boxed - dark - preloader1 - preloader2 - preloader3 - light_header - dark_sup_menu - menu_button_mode - transparent_header - header_on_side ) -->
+	<body class="preloader3 light_header">
+		<div id="preloader">
+			<div class="spinner">
+				<div class="sk-dot1"></div><div class="sk-dot2"></div>
+				<div class="rect3"></div><div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</div>
+		<div id="main_wrapper">
+			<div class="woodbar"></div>
+			<div class="enter-box eukanuba-enter">
+				<div class="eukanuba-color color_cover">
+					<div class="cover-content">
+						<div class="logo"><img src="/eukanuba/img/logo_dark.png?3">
+							<br>
+							<h4>狗狗生命週期的營養哲學</h4>
+							<img class="pet-icon" src="/images/dog_icon_white.png">
+							<br>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="enter-box iams-enter">
+				<div class="iams-color color_cover">
+					<div class="cover-content">
+						<div class="logo"><img src="/iams/img/logo_dark.png">
+							<br>
+							<h4>貓貓三重點：均衡、均衡、均衡</h4>
+							<img class="pet-icon" src="/images/cat_icon_white2.png">
+							<br>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<a href="#0" class="hm_go_top"></a>
+		</div>
+		<!-- End wrapper -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')
+		</script>
+		<script src="/js/plugins.js"></script>
+		<script src="/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+		<script src="/js/isotope.pkgd.min.js"></script>
+		<script src="/js/jquery.color-2.1.2.js"></script>
+		<!-- this is where we put our custom functions -->
+		<script type="text/javascript" src="/js/functions.js"></script>
+		<script>
+			$(".eukanuba-enter").hover(function() {
+				$(this).find(".color_cover").stop().animate({
+						backgroundColor:"rgba(228,0,125,0)"
+					}, 500);
+				$(".iams-enter").find(".color_cover").stop().animate({
+						backgroundColor:"rgba(230,108,41,1)"
+					}, 500);;
+			});
+			$(".iams-enter").hover(function() {
+				$(this).find(".color_cover").stop().animate({
+						backgroundColor:"rgba(230,108,41,0)"
+					}, 500);
+				$(".eukanuba-enter").find(".color_cover").stop().animate({
+						backgroundColor:"rgba(228,0,125,1)"
+					}, 500);;
+			});
+		</script>
+	</body>
+</html>

@@ -1,24 +1,6 @@
-.eukanuba-enter {
-	background: url("/eukanuba/img/background.jpg") ;
-}
-
-.eukanuba-color{
-	background: rgba(228,0,125,0.3);
-	position:absolute;
-	width:50vw;
-	height:100vh;
-	left:0;
-	top:0;
+.enter-box .content {
+	position: absolute;
 	z-index: 0;
-}
-
-.enter-box .content{
-	position:absolute;
-	z-index:10;
-}
-
-.iams-enter {
-	background: url("/iams/img/background2.jpg")
 }
 
 .enter-box {
@@ -28,8 +10,43 @@
 	height: 100vh;
 	background-size: cover;
 	background-position: center center;
+	cursor: pointer;
 }
 
+.eukanuba-enter {
+	background-image: url("/eukanuba/img/background.jpg");
+}
+
+.eukanuba-color {
+	background: rgba(228,0,125,1);
+}
+
+.color_cover {
+	text-align: center;
+	position: absolute;
+	width: 50vw;
+	height: 100vh;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.color_cover h3,.color_cover h4{
+	color:#fff;
+}
+
+.cover-content {
+	width: 400px;
+	display: inline-block;
+	padding-top: 30vh;
+}
+
+.iams-enter {
+	background-image: url("/iams/img/background2.jpg")
+}
+
+.iams-color {
+	background: rgba(230,108,41,1);
+}
 
 .bot_angle {
 	border-width: 20vh 0 0 0;
@@ -44,4 +61,33 @@
 
 .bg-white-l {
 	border-color: transparent #fff transparent transparent;
+}
+
+.main-content{
+	text-align:center;
+}
+
+.main-content .logo{
+	margin-top:30px;
+}
+
+.main-content .intro{
+	padding:20px;
+	margin:30px;
+	background:rgba(255,255,255,0.9)
+}
+
+@media screen and (max-width: 600px) {
+	.enter-box, .color_cover {
+		display: block;
+		width: 100vw;
+		height: initial;
+		min-height: 50vh;
+	}
+	.cover-content {
+		padding-top: 20px;
+	}
+	.pet-icon{
+		display:none;
+	}
 }
